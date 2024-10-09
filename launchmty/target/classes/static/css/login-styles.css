@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.background-image {
+    background-image: url('../images/monterrey.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+h1 {
+    color: #021526;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #606770;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #021526;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #021526;
+}

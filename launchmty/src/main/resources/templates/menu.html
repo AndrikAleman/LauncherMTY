@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="/css/stylesmenu.css">
+    <script src="/js/menu-script.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="user-info">
+        <h1 id="nombreUsuario" th:text="${nombre}">User name</h1>
+        <p th:text="${rol}">User Role</p>
+    </div>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit" class="logout-btn">Log out</button>
+    </form>
+</header>
+<main>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <a href="#" onclick="abrirEnNuevaVentanaConUserId('http://localhost:8080/TTSDMty/jsf/home/dashboard.xhtml'); return false;">
+                <img src="/iconos/camion-de-carga.png" alt="TTSDMty">
+                <p>TTSDMty</p>
+                <p class="description">Sistema de innovación</p>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#" onclick="abrirEnNuevaVentanaSinUserId('https://www.sat.gob.mx/consultas/97722/comprobante-de-nomina#:~:text=Conocer%20la%20forma%20de%20llenar%20y%20expedir%20un'); return false;">
+                <img src="/iconos/SAT.png" alt="Timbrado Fiscal">
+                <p>Timbrado Fiscal</p>
+                <p class="description">Sistema de timbrado Fiscal</p>
+            </a>
+        </div>
+        <!-- Si necesitas más elementos, solo copia y pega el div anterior -->
+    </div>
+</main>
+</body>
+</html>
